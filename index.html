@@ -16,11 +16,11 @@
     <section class="bg-slate-800 flex pt-10">
         <div class="">
 
-            <img class="w-100" src="images/image 27.png" alt="">
+            <img class="w-full" src="images/image 27.png" alt="">
         </div>
         <div class="mx-auto">
             <h1 class="text-5xl text-orange-500 font-extrabold font-mono text-center mt-10">Choose Your Best Five</h1>
-            <div class="">
+            <div class="relative">
                 <img src="images/Line Marker.png" alt="">
             </div>
             <p class="text-white text text-center">Learn more about Messis’s incredible rise through the Santos
@@ -38,7 +38,7 @@
                 <p></p>
             </div>
             <!-- Static parent -->
-            <div class="absolute ...">
+            <div class="absolute -right-4">
                 <img src="images/soccer-goal-top-png-8 4 (1).png" alt="">
             </div>
             <div class="inline-block">
@@ -48,87 +48,110 @@
 
     </section>
     <!-- select player section  -->
-    <section class="mx-auto ">
-        <div class="grid grid-cols-2 gap-4 mx-20 mt-10 mb-10">
-            <div class="grid grid-cols-3 gap-4">
+    <!-- select player section  -->
+    <section class="mx-auto justify-center w-9/12">
+        <div class="grid grid-cols-2 gap-4  mt-10 mb-10">
+            <div class="grid grid-cols-3 gap-4 mx-auto">
                 <div class="card  bg-slate-900 w-full rounded">
                     <figure><img src="images/Rectangle 144.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-white font-bold text-2xl">Lionel Messi</h2>
                         <p class="text-center text-slate-300 font-light text-sm">36 Goals | 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
+                            <button id="btn1" onclick="addPlayer('Lionel Messi', 'btn1'); this.disabled=true;"
+                                class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card  bg-slate-900 w-full rounded">
                     <figure><img src="images/Rectangle 144.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title justify-center text-white font-bold text-2xl">Lionel Messi</h2>
+                        <h2 class="card-title justify-center text-white font-bold text-2xl">Neymar JR.</h2>
                         <p class="text-center text-slate-300 font-light text-sm">36 Goals | 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
+                            <button id="btn2" onclick="addPlayer('Neymar JR.', 'btn2'); this.disabled=true;"
+                                class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card  bg-slate-900 w-full rounded">
                     <figure><img src="images/Rectangle 144.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title justify-center text-white font-bold text-2xl">Lionel Messi</h2>
+                        <h2 class="card-title justify-center text-white font-bold text-2xl">MBappe</h2>
                         <p class="text-center text-slate-300 font-light text-sm">36 Goals | 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
+                            <button id="btn3" onclick="addPlayer('MBappe', 'btn3'); this.disabled=true;"
+                                class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card  bg-slate-900 w-full rounded">
                     <figure><img src="images/Rectangle 144.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title justify-center text-white font-bold text-2xl">Lionel Messi</h2>
+                        <h2 class="card-title justify-center text-white font-bold text-2xl">Marco</h2>
                         <p class="text-center text-slate-300 font-light text-sm">36 Goals | 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
+                            <button id="btn4" onclick="addPlayer('Marco', 'btn4'); this.disabled=true;"
+                                class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card  bg-slate-900 w-full rounded">
                     <figure><img src="images/Rectangle 144.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title justify-center text-white font-bold text-2xl">Lionel Messi</h2>
+                        <h2 class="card-title justify-center text-white font-bold text-2xl">Pele</h2>
                         <p class="text-center text-slate-300 font-light text-sm">36 Goals | 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
+                            <button id="btn5" onclick="addPlayer('Pele', 'btn5'); this.disabled=true;"
+                                class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
                         </div>
                     </div>
                 </div>
                 <div class="card  bg-slate-900 w-full rounded">
                     <figure><img src="images/Rectangle 144.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title justify-center text-white font-bold text-2xl">Lionel Messi</h2>
+                        <h2 class="card-title justify-center text-white font-bold text-2xl">Ronaldo</h2>
                         <p class="text-center text-slate-300 font-light text-sm">36 Goals | 120 Assist</p>
                         <div class="card-actions justify-center">
-                            <button class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
+                            <button id="btn6" onclick="addPlayer('Ronaldo', 'btn6'); this.disabled=true;"
+                                class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Select</button>
                         </div>
                     </div>
+                </div>
 
-                </div>
-
-
-                <!-- ... -->
 
             </div>
-            <div>
-                <div class="grid grid-cols-1 gap-4">
-                    <h1>Selected V</h1>
-                    <ol type="1">
-                        <li></li>
-                        <li>messi</li>
-                        <li></li>
-                    </ol>
+            <div class="grid grid-cols-1 gap-4 mx-auto ">
+                <div class="ml-5 p-4 border-2 border-slate-600 bg-slate-900">
+                    <h1 class="text-4xl font-bold text-center text-white">SELECTED-V</h1>
+                    <div class="ml-5">
+                        <ol id="playerList" class="list-decimal text-xl font-semibold mt-5"></ol>
+                    </div>
+                </div>
+                <div class="ml-5 p-4 border-2 border-slate-600  mx-auto bg-slate-900">
+                    <h1 class="text-4xl text-center font-bold mb-4">BUDGET</h1>
+                    <h3 class="text-xl font-semibold ml-5">Per Player <input
+                            class="border-solid border-2 border-sky-500 w-64 h-12 px-8 ml-5 mb-5" type="number"
+                            name="player price" id="playerPrice" placeholder="player price"></h3>
+
+                    <button onclick="calculateBtn()"
+                        class="bg-sky-600 px-16 py-2 text-white font-semibold text-xl text-center w-80 ml-14">Calculate</button>
+
+                    <p class="text-xl font-semibold ml-2 mt-3">Player Expenses $<span id="playerExpense">0</span></p>
+                    <div class="flex gap-4">
+                        <p>manager</p>
+                        <input type="number" name="manager price" id="managerPrice" placeholder="manager price">
+                    </div>
+                    <input type="number" name="coach price" id="coachPrice" placeholder="coach price"><button
+                        onclick="calculateTotalBtn()"
+                        class="bg-sky-600 px-14 py-2 text-white font-semibold text-xl">Calculate Total</button>
+                    <p>total expenses <span id="totalExpense">0</span></p>
                 </div>
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
+    <script src="js/selectbtn.js"></script>
 </body>
 
 </html>
